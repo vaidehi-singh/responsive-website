@@ -1,0 +1,149 @@
+body{
+    height: 100vh;
+    /* width: 100vw; */
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 100vw;
+}
+.nav{
+    height: 100px;
+    border-bottom: 2px solid rgb(188, 106, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 2%;
+    background-color: rgb(232, 162, 72);
+    position: relative;
+}
+.l h3{
+    font-size: 0.9em;
+}
+.r{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* font-size: 30px; */
+}
+.r h3{
+    font-size: 0.5em;
+    width: auto;
+    padding: 10px 5px;
+    margin: 0px 12px;
+}
+.r button{
+    height: 2.5rem;
+    width: 5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(147, 83, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 0.5em;
+}
+.r img{
+    display: none;
+}
+#r{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 101px);
+    background-color: rgb(188, 106, 0);
+    position: absolute;
+    top: 101px;
+    left: 0px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+#r h3{
+    font-size: 0.5em;
+    width: auto;
+    padding: 10px 5px;
+    margin: 0px 12px;
+    border-bottom: 1px solid rgb(78, 45, 1);;
+}
+.main{
+    height: calc(100% - 102px);
+    background-color: burlywood;
+    width: 100%;
+    display: flex;
+}
+.l2{
+    height: 100%;
+    width: 50vw;
+}
+.l2 h3{
+    font-size: 5.6vmax;
+    font-weight: 600;
+    margin: 6vw 0 0vw 2vw;
+    line-height: 3vmax;
+}
+span{
+    color:  rgb(147, 83, 0);
+}
+.l2 p{
+    font-size: 0.6em;
+    width: 75%;
+    margin: 5vw 0 1vw 2vw;
+    line-height: 3vmax;
+}
+.l2 button{
+    margin: 3vw 0vw 0vw 17vw;
+    height: 2.5rem;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(147, 83, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 0.5em;
+}
+.r2{
+    height: 100%;
+    width: 50vw;
+    background-color: #e8f7fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.r2 img{
+    width: 73%;
+    margin: auto;
+}
+@media (max-width:600px) {
+    .r img{
+        width: 30px;
+        display: block;
+    }
+    .r h3{
+        display: none;
+    }
+    .r{
+        justify-content: flex-end;
+        gap: 9px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .l2{
+        width: 100vw;
+    }
+    .l2 h3{
+        width: 80%;
+        line-height: 6vh;
+    }
+    .l2 button{
+        margin: 3vw 1vw 5vw 35vw;
+    }
+    .r2{
+        width: 100vw;
+    }
+    .r2 img{
+        width: 50%;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <div class="l">
+            <h3>Logo</h3>
+        </div>
+        <div class="r">
+            <h3>About Us</h3>
+            <h3>Contact Us</h3>
+            <h3>Blogs</h3>
+            <h3>More</h3>
+            <button>sign in</button>
+            <img id="menu" src="/align-justify-svgrepo-com.svg" alt="">
+        </div>
+        <div id="r">
+            <h3>About Us</h3>
+            <h3>Contact Us</h3>
+            <h3>Blogs</h3>
+            <h3>More</h3>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div class="l2">
+            <h3>Limit is the <span>Sky</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempore sint quidem perspiciatis repellat
+                nesciunt. Dignissimos praesentium earum hic ipsam impedit nam quae soluta. Inventore ipsum eos quisquam
+                minus itaque totam repudiandae at ex repellendus.</p>
+            <button>Learn more</button>
+        </div>
+        <div class="r2">
+            <img src="/girl.png" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    let button__ = document.getElementById('menu');
+    // let main = document.getElementById('main')
+    button__.addEventListener('click', e => {
+        document.getElementById('r').style.visibility = "visible";
+        document.getElementById('r').style.opacity = "1";
+        button__.style.display = "none";
+        event.stopPropagation();
+    })
+    document.body.addEventListener('click', e => {
+        document.getElementById('r').style.visibility = "";
+        document.getElementById('r').style.opacity = "";
+        button__.style.display = "";
+        console.log("yo")
+    })
+</script>
+
+</html>
